@@ -1,0 +1,136 @@
+body{
+    
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background-color: black;
+    background-image: url(image.jpg);
+    background-size: 100%;
+    
+}
+
+h1{
+    color: rgb(159, 154, 154);
+}
+
+.screen{
+    font-size: 44px;
+    background: rgb(38, 38, 72);
+    color: white;
+    border-radius: 11px;
+}
+
+.clear{
+    font-size: 44px;
+    background: red;
+    color: white;
+    border-radius: 11px;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+}
+button{
+    flex-basis: 25%;
+    font-size: 22px;
+    border-radius: 9px;
+}
+
+button:hover{
+    background: rgb(110, 138, 194);
+}
+
+
+
+@media screen and (max-width:1024px) and (min-width:600px)
+{
+   body{
+    transform: translate(-9%);
+   }
+}
+
+@media screen and (max-width:800px)
+{
+    .screen{
+        font-size: 33px;
+        border-radius: 11px;
+    }
+    
+    .clear{
+        font-size: 33px;
+        border-radius: 11px;
+    }
+    body{
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .buttons{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    button{
+        flex-basis: 24%;
+        font-size: 28px;
+        border-radius: 9px;
+    }
+    body{
+        transform: translate(-11%);
+       }
+}
+
+@media screen and (max-width:600px)
+{
+    body{
+        transform: translate(-9%);
+    }
+    .screen{
+        font-size: 30px;
+        border-radius: 11px;
+    }
+    
+    .clear{
+        font-size: 30px;
+        border-radius: 11px;
+    }
+
+    .buttons{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    button{
+        flex-basis: 25%;
+        font-size: 19px;
+        border-radius: 9px;
+    }
+}
+
+@media screen and (max-width:500px)
+{
+    body{
+        transform: translate(1px);
+    }
+    .screen{
+        font-size: 25px;
+        border-radius: 11px;
+    }
+    
+    .clear{
+        font-size: 23px;
+        border-radius: 11px;
+    }
+
+    .buttons{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    button{
+        flex-basis: 23%;
+        font-size: 16px;
+        border-radius: 9px;
+    }
+}
